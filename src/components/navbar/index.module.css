@@ -3,7 +3,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 33px;
+    padding: 33px 24px 0 24px;
+
+    @media (min-width: 1280px) {
+        padding: 44px 55px 0 55px;
+    }
 }
 
 .image {

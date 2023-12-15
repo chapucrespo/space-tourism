@@ -4,6 +4,9 @@
   --blue-gray: #D0D6F9;
   --white: #FFF;
   --black: #0B0D17;
+  --mobile: '767px';
+  --tablet: '1023px';
+  --desktop: '1280px';
 }
 
 * {
@@ -16,17 +19,6 @@ html,
 body {
   overflow-x: hidden;
 }
-
-/* body {
-  color: var(--white);
-  min-height: 100vh;
-
-  @media (max-width: 430px) {
-    background: url('/assets/home/background-home-mobile.jpg'), lightgray 0px 0px / 100% 100% no-repeat;
-    mix-blend-mode: screen;
-    background-size: cover;
-  }
-} */
 
 a {
   color: pink;
