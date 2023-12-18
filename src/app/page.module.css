@@ -77,6 +77,7 @@
 .button {
   border-radius: 100%;
   font-family: Bellefair;
+  position: relative;
   width: 150px;
   height: 150px;
   flex-shrink: 0;
@@ -85,4 +86,23 @@
   border: none;
   cursor: pointer;
   margin-top: 90px;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 100%;
+}
+
+.button:hover::before {
+  top: -15px;
+  bottom: -15px;
+  right: -15px;
+  left: -15px;
+  border: 15px solid rgba(255, 255, 255, 0.1036);
 }

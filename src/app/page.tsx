@@ -1,12 +1,12 @@
 import React from 'react'
 
-import Navbar from '@/components/navbar'
 import styles from './page.module.css'
+import Navigation from '@/components/navigation'
 
 export default function page() {
   return (
     <div className={styles.main}>
-      <Navbar/>
+      <Navigation/>
       <div className={styles.mainContainer}>
         <div className={styles.textContainer}>
           <h1 className={styles.littleText}>SO YOU WANT TO TRAVEL TO</h1>
